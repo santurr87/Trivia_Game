@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<script>
+	
+
+
+	//60 second timer to begin the game - user alerted if 60 sec are up.
+	var count = 60, timer = setInterval(function() {
+    $("#counter").html(count--);
+    if(count == 1) clearInterval(timer);
+    alert("Time is Up!")
+	}, 1000);
+
+	//function created to submit the quiz and have it console logged.
+	function submitQuiz() {
+		console.log('submitted');
+
+	//for loop for array?
+	for (var i = question.length - 1; i >= 0; i--) {
+		question[i]
+	};
+
+	//create if/else statements for conditions based on user picks
+
+	//create a score counter/display once user hits submit
+
+	//if user clicks incorrect answer tally as no and convert to useable date to print
+
+	//print answers
+	function correctAnswer (correctStringNo, qNumber)
+	
+	//show score correct out of possible amount correct
+	var yourScore = "Your Score: " + tallyScore + "/" totalQuestions
+
+
+</script>
+
+
+  <h2 class="quizHeader">Multiple Choice!</h2>
+
+  
+        <div>
+          <p class="question">1. "A flock of crows is known as a...?"</p>
+
+          
+            <input class="answer" type="radio" name="q1" value="1">
+            <label id="correctString1">Murder</label>
+            	<br>
+            <input class="answer" type="radio" name="q1" value="0">
+            <label>Pack</label>
+            	<br>
+            <input class="answer" type="radio" name="q1" value="0">
+            <label>Herd</label>
+            	<br>
+            <input class="answer" type="radio" name="q1" value="0">
+            <label>Congregation</label>
+        
+          
+        <div>
+          <p class="question">2. "How many people a year die from a falling coconut?</p>
+
+          
+            <input class="answer" type="radio" name="q2" value="0">
+            <label>75</label>
+            	<br>
+            <input class="answer" type="radio" name="q2" value="1">
+            <label id="correctString2">150</label>
+            	<br>
+            <input class="answer" type="radio" name="q2" value="0">
+            <label>100</label>
+            	<br>
+            <input class="answer" type="radio" name="q2" value="0">
+            <label>175</label>
+          
+        </div>
+      
+        <div>
+          <p class="question">3. "During your lifetime you will produce enough saliva to fill how many swimming pools?</p>
+			
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>1</label>
+            	<br>
+            <input class="answer" type="radio" name="q3" value="1">
+            <label id="correctString3">2</label>
+            	<br>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>4</label>
+            	<br>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>3</label>
+          
+        </div>
+      
+        <div>
+          <p class="question">"The average person walks around the world how many times in their life time?"</p>
+
+          
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>2</label>
+            	<br>
+            <input class="answer" type="radio" name="q4" value="1">
+            <label id="correctString4">3</label>
+            	<br>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>4</label>
+            	<br>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>1</label>
+          
+        </div>
+      
+  <br/>
+
+  	<div class="submit">
+    	<input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+  </div>
+
+  <!--show wrong answers on submit.-->
+	  <div class="anwers" id="correctString1"></div>
+	  <div class="anwers" id="correctString2"></div>
+	  <div class="anwers" id="correctString3"></div>
+	  <div class="anwers" id="correctString4"></div>
+
+  <!--show score when user submits.-->
+	  <div>
+	    <h2 class="quizScore" id="userScore"></h2>
+	  </div>
+	  </div>
+
+	<style>
+			body {
+				background: url("https://timedotcom.files.wordpress.com/2017/02/celeb-reactions.jpg");
+				color: yellow;
+				font-weight: bolder;
+			}
+
+			.quizHeader {
+				text-align: center;
+			}
+
+
+
+	</style>
+
+
+
+
+
+</body>
+</html>
